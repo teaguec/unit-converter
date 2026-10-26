@@ -6,36 +6,36 @@
     <title>Unit Converter</title>
 </head>
 <body>
-    <h2>
-        <form action="/length">
-            <label for="old">Inital unit</label>
-            <select id="length" name="length">
-                <option value="millimeter">Millimeters</option>
-                <option value="centimeter">Centimeters</option>
-                <option value="meter">Meters</option>
-                <option value="kilometer">Kilometer</option>
-                <option value="inch">Inch</option>
-                <option value="foot">Foot</option>
-                <option value="yard">Yard</option>
-                <option value="mile">Mile</option>
-            </select><br>
-            
-            <label for="measurement">Measurement:</label>
-            <input type="text" id="measurement" name="measurement"><br>
+    <h2>Length Conversion</h2>
+    <form action="/" method="post">
+        <label for="oldunit">Inital unit</label>
+        <select id="oldunit" name="oldunit">
+            <option value="millimeter">Millimeters</option>
+            <option value="centimeter">Centimeters</option>
+            <option value="meter">Meters</option>
+            <option value="kilometer">Kilometer</option>
+            <option value="inch">Inch</option>
+            <option value="foot">Foot</option>
+            <option value="yard">Yard</option>
+            <option value="mile">Mile</option>
+        </select><br>
+        
+        <label for="numvalue">Measurement:</label>
+        <input type="text" id="numvalue" name="numvalue"><br>
 
-            <label for="new">New Unit</label>
-            <select id="length" name="length">
-                <option value="millimeter">Millimeters</option>
-                <option value="centimeter">Centimeters</option>
-                <option value="meter">Meters</option>
-                <option value="kilometer">Kilometer</option>
-                <option value="inch">Inch</option>
-                <option value="foot">Foot</option>
-                <option value="yard">Yard</option>
-                <option value="mile">Mile</option>
-            </select><br>
-            <input type="submit" value="Submit">
-        </form>
-    </h2>
+        <label for="newunit">New Unit</label>
+        <select id="newunit" name="newunit">
+            <option value="millimeter">Millimeters</option>
+            <option value="centimeter">Centimeters</option>
+            <option value="meter">Meters</option>
+            <option value="kilometer">Kilometers</option>
+            <option value="inch">Inches</option>
+            <option value="foot">Feet</option>
+            <option value="yard">Yards</option>
+            <option value="mile">Miles</option>
+        </select><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p>{{result}}</p>
 </body>
 </html>
