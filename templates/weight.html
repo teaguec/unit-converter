@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+</head>
+<body>
+    <a href="/"><h1>Distance Converter</h1></a>
+    <h2>Weight Conversion</h2>
+    <form action="/weight" method="post">
+        <label for="oldunit">Inital unit</label>
+        <select id="oldunit" name="oldunit">
+            <option value="millligram">Milligram</option>
+            <option value="gram">Gram</option>
+            <option value="kilogram">Kilogram</option>
+            <option value="ounce">Ounce</option>
+            <option value="pound">Pound</option>
+        </select><br>
+        
+        <label for="numvalue">Measurement:</label>
+        <input type="text" id="numvalue" name="numvalue"><br>
+
+        <label for="newunit">New Unit</label>
+        <select id="newunit" name="newunit">
+            <option value="millligram">Milligram</option>
+            <option value="gram">Gram</option>
+            <option value="kilogram">Kilogram</option>
+            <option value="ounce">Ounce</option>
+            <option value="pound">Pound</option>
+        </select><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h3>Result:</h3>
+    <p>{{result}}</p>
+</body>
+</html>
